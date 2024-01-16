@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Google Auth Demo</title>
+        <meta name="google-signin-client_id" content="35335994879-s000m15sjfmcouo5pf9cmlfdae438nn4.apps.googleusercontent.com">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+    </head>
+
+    <body>
+        <h1>Remy's Demo Page</h1>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    </body>
+    <script>
+        function onSignIn(googleUser) {
+            console.log('User signed in');
+            console.log(googleUser.getBasicProfile());
+        }
+    </script>
+</html>
